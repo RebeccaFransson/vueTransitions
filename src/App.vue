@@ -1,10 +1,15 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Fade to Home</router-link>
     </div>
-    <router-view/>
+      <div id="nav">
+      <router-link to="/parent">Slider Home</router-link> |
+      <router-link to="/parent/about">Slider About</router-link>
+    </div>
+    <transition name="fade" mode="out-in">
+      <router-view class="view"></router-view>
+    </transition>
   </div>
 </template>
 
