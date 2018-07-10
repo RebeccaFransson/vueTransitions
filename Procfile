@@ -1,0 +1,1 @@
+vue-cli-service serve --host vue-transitions.herokuapp.com
